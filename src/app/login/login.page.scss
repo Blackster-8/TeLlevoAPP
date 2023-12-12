@@ -1,0 +1,66 @@
+
+ion-content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen{
+    display: flex;
+    max-width: 75%;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+a{
+    font-size: 0.8rem;
+    text-align: right;
+    width: 100%;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+label{
+    width: 100%;
+    text-align: left;
+}
+
+button{
+    color: #1e1e1e;
+    background-color: #e1b414;
+    height: 2.4rem;
+    width: 90%;
+    border-radius: 1.2rem;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    outline: none;
+    height: 2.4rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    padding: 0 10px;
+    color: #1e1e1e;
+}
+
+.forgot, .singup{
+    color:#e1b414
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 90%;
+}

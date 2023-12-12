@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1>Registro</h1>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" [(ngModel)]="toAdd.nombre" id="nombre" placeholder="Nombres">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" [(ngModel)]="toAdd.apellido" id="apellido" placeholder="Apellidos">
+
+    <label for="rut">RUT</label>
+    <input type="text" [(ngModel)]="toAdd.rut" id="rut" placeholder="12345678-9">
+
+    <label for="telefono">Teléfono</label>
+    <input type="text" [(ngModel)]="toAdd.telefono" id="telefono" placeholder="+56912345678">
+
+    <label for="email">Correo Institucional</label>
+    <input type="text" [(ngModel)]="toAdd.correo" id="email" placeholder="nom.apellido@duocuc.cl">
+
+    <label for="clave">Contraseña</label>
+    <input type="password" [(ngModel)]="toAdd.clave" id="clave" placeholder="Contraseña-00">
+
+    <label for="claveConfirmada">Confirmar Contraseña</label>
+    <input type="password" [(ngModel)]="toAdd.claveConfirmada" id="clave" placeholder="Contraseña-00">
+
+    <button (click)="registrarUsuario()">Registrarme</button>
+    <a href="#" [routerLink]="['/login']">Ya tengo una cuenta</a>
+  </div>
+</ion-content>

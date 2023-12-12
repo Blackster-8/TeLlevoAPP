@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="imagen">
+      <img src="assets/login/chatbot.1.gif" alt="">
+    </div>
+    <h1>TeLlevoApp</h1>
+    <div class="login">
+      <label for="user">Usuario</label>
+      <input type="text" id="user" placeholder="Correo Institucional" required [(ngModel)]="toChoose.correo" >
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" placeholder="Contraseña" required [(ngModel)]="toChoose.clave" >
+      <a href="#" class="forgot" [routerLink]="['/start']">Olvide mi Contraseña</a>
+      <a href="#" class="singup" [routerLink]="['/singup']">Registrarme</a>
+    </div>
+    <button  (click)="obtenerDatosUsuarioRegistrado(toChoose.correo, toChoose.clave)">Iniciar sesión</button>
+  </div>
+</ion-content>

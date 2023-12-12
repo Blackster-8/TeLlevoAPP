@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <H1>Billetera</H1>
+      </div>
+      <div class="arriba">
+        <H1>Proximamente</H1>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="boton" [routerLink]="['/home']">
+        <ion-icon name="home"></ion-icon>
+        <h3>Inicio</h3>
+      </div>
+      <div class="boton" [routerLink]="['/wallet']">
+        <ion-icon name="wallet"></ion-icon>
+        <h3>Billetera</h3>
+      </div>
+      <div class="boton" [routerLink]="['/map']">
+        <ion-icon name="map"></ion-icon>
+        <h3>Mapa</h3>
+      </div>
+      <div class="boton" [routerLink]="['/profile']">
+        <ion-icon name="person"></ion-icon>
+        <h3>Perfil</h3>
+      </div>
+    </div>
+  </div>
+</ion-content>

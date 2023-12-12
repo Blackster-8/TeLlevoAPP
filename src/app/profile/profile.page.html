@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <H1>Perfil</H1>
+      </div>
+
+      <div class="centro">
+        <div class="mes">
+          <div class="info">
+            <div class="imagen">
+              <img src="assets/benja.jpg" alt="">
+            </div>
+            <div class="texto">
+              <h3>Tú</h3>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="mes">
+          <div class="info" [routerLink]="['/account']">
+            <ion-icon name="person"></ion-icon>
+            <div class="texto">
+              <h2>Cuenta</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mes">
+          <div class="info" [routerLink]="['/setting']">
+            <ion-icon name="settings"></ion-icon>
+            <div class="texto">
+              <h2>Configuración</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mes">
+          <div class="info" [routerLink]="['/trips']">
+            <ion-icon name="hourglass"></ion-icon>
+            <div class="texto">
+              <h2>Historial</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mes">
+          <div class="info" [routerLink]="['/help']">
+            <ion-icon name="help"></ion-icon>
+            <div class="texto">
+              <h2>Ayuda</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mes">
+          <div class="info" [routerLink]="['/start']">
+            <ion-icon name="log-out"></ion-icon>
+            <div class="texto">
+              <h2>Cerrar sesión</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="boton" [routerLink]="['/home']">
+        <ion-icon name="home"></ion-icon>
+        <h3>Inicio</h3>
+      </div>
+      <div class="boton" [routerLink]="['/wallet']">
+        <ion-icon name="wallet"></ion-icon>
+        <h3>Billetera</h3>
+      </div>
+      <div class="boton" [routerLink]="['/map']">
+        <ion-icon name="map"></ion-icon>
+        <h3>Mapa</h3>
+      </div>
+      <div class="boton" [routerLink]="['/profile']">
+        <ion-icon name="person"></ion-icon>
+        <h3>Perfil</h3>
+      </div>
+    </div>
+  </div>
+</ion-content>

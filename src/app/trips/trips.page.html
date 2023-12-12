@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <div [routerLink]="['/home']">
+          <ion-icon name="arrow-back"></ion-icon>
+        </div>
+        <H1>Historial de viajes creados</H1>
+      </div>
+
+      <table>
+        <tr id="titulosTabla">
+          <th id="th1">ID</th>
+          <th id="th2">HORA</th>
+          <th id="th3">CAPACIDAD</th>
+          <th id="th4">PRECIO</th>
+          <th id="th5">DESTINO</th>
+        </tr>
+        <tr id="contenidoTabla" *ngFor="let trip of trips">
+          <td>{{trip.id}}</td>
+          <td>{{trip.hora}}</td>
+          <td>{{trip.capacidad}}</td>
+          <td>{{trip.precio}}</td>
+          <td>{{trip.destino}}</td>
+        </tr>
+      </table>
+
+      
+
+    </div>
+  </div>
+</ion-content>

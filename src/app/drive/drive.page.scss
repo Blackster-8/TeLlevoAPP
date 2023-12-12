@@ -1,0 +1,163 @@
+.contenido {
+  min-height: 90vh;
+  width: 100%;
+}
+
+.menu {
+  min-height: 10vh;
+  background-color: #002d65;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  filter: drop-shadow(0px -3px 4px #151515);
+}
+
+.boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ion-icon {
+    font-size: 1.6rem;
+    color: #e0e0e0;
+
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #e0e0e0;
+  }
+}
+
+.arriba {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  ion-icon {
+    font-size: 2rem;
+    color: #e0e0e0;
+  }
+}
+
+.centro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mes {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5%;
+  border-bottom: 4px #1e1e1e solid;
+  row-gap: 10px;
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  ion-icon {
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    background-color: #e1b414;
+    border-radius: 50%;
+    padding: 8px;
+  }
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    color: #ababab;
+    font-size: 0.65rem;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+#map {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin-top: 5px;
+}
+
+button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #1e1e1e;
+  background-color: #e1b414;
+  height: 2.4rem;
+  width: 75%;
+  border-radius: 1.2rem;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-mapa {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  width: 100%;
+  height: 40vh;
+}
+
+input,
+ion-item {
+  color: #000000 !important;
+}
+
+label {
+  width: 90%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+input {
+
+  border: none;
+  outline: none;
+  height: 2.4rem;
+  width: 90%;
+  border-radius: 1.2rem;
+  padding: 0 10px;
+  color: #1e1e1e;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  padding: 0px 7%;
+  width: 100vw;
+
+}

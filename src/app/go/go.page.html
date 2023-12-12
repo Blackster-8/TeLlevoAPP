@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <div [routerLink]="['/home']">
+          <ion-icon name="arrow-back"></ion-icon>
+        </div>
+        <H1>Viajes</H1>
+      </div>
+      <table>
+        <tr id="titulosTabla">
+          <th id="th1">ELEGIR</th>
+          <th id="th2">HORA</th>
+          <th id="th3">CAPACIDAD</th>
+          <th id="th4">PRECIO</th>
+          <th id="th5">DESTINO</th>
+          <th id="th5">CANTIDAD</th>
+          <th id="th5">ACEPTAR</th>
+        </tr>
+        <tr id="contenidoTabla" *ngFor="let trip of trips">
+          <td><ion-checkbox [(ngModel)]="toSelect.check" (ionChange)="handleCheckboxChange(toSelect)"></ion-checkbox>
+          </td>
+          <td>{{trip.hora}}</td>
+          <td>{{trip.capacidad}}</td>
+          <td>{{trip.precio}}</td>
+          <td>{{trip.destino}}</td>
+          <td><input [(ngModel)]="toSelect.cantidad" [disabled]="!toSelect.check" type="text" placeholder="2"></td>
+          <td><button (click)="handleSeleccionViaje(trip, toSelect)">Aceptar Viaje</button></td>
+        </tr>
+      </table>
+
+      <i>*Puede ver el historial de viajes aceptados en su Perfil.</i>
+    </div>
+  </div>
+</ion-content>

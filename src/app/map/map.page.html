@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <H1>Mapa</H1>
+      </div>
+      <div class="map">
+        <div #map id="map"></div>
+        <input type="text" [(ngModel)]="end" (input)="updateSearchResults()" placeholder="Destino">
+        <ion-list *ngIf="autocompleteItems" [hidden]="autocompleteItems.length == 0">
+          <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+            {{ item.description }}
+          </ion-item>
+        </ion-list>
+      </div>
+
+      <div class="mes">
+        <div class="info" [routerLink]="['/trips']">
+          <ion-icon name="accessibility"></ion-icon>
+          <div class="texto">
+            <h2 [routerLink]="['/go']">Viajar</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mes">
+        <div class="info" [routerLink]="['/drive']">
+          <ion-icon name="car-sport"></ion-icon>
+          <div class="texto">
+            <h2 [routerLink]="['/drive']">Conducir</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <div class="boton" [routerLink]="['/home']">
+        <ion-icon name="home"></ion-icon>
+        <h3>Inicio</h3>
+      </div>
+      <div class="boton" [routerLink]="['/wallet']">
+        <ion-icon name="wallet"></ion-icon>
+        <h3>Billetera</h3>
+      </div>
+      <div class="boton" [routerLink]="['/map']">
+        <ion-icon name="map"></ion-icon>
+        <h3>Mapa</h3>
+      </div>
+      <div class="boton" [routerLink]="['/profile']">
+        <ion-icon name="person"></ion-icon>
+        <h3>Perfil</h3>
+      </div>
+    </div>
+  </div>
+</ion-content>

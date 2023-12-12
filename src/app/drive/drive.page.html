@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="arriba">
+        <div [routerLink]="['/home']">
+          <ion-icon name="arrow-back"></ion-icon>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contenido">
+          <div class="arriba">
+            <h1>Crear destino</h1>
+          </div>
+          <div class="map">
+            <div #map id="map"></div>
+            <ion-list *ngIf="autocompleteItems" [hidden]="autocompleteItems.length == 0">
+              <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+                {{ item.description }}
+              </ion-item>
+            </ion-list>
+          </div>
+
+          <div class="inputs">
+            <div class="input">
+              <label for="">Destino</label>
+              <input type="text" [(ngModel)]="toAdd.destino" (input)="updateSearchResults()" placeholder="Destino">
+            </div>
+            <div class="input">
+              <label for="">Precio</label>
+              <input type="text" [(ngModel)]="toAdd.precio" placeholder="1000">
+            </div>
+            <div class="input">
+              <label for="">Capacidad</label>
+              <input type="text" [(ngModel)]="toAdd.capacidad" placeholder="4">
+            </div>
+            <div class="input">
+              <label for="">Hora de Salida</label>
+              <input type="text" [(ngModel)]="toAdd.hora" placeholder="22:30">
+            </div>
+            <button (click)="createTrip()">Agregar</button>
+            <i>*Puede ver el historial de viajes creados en su Perfil.</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

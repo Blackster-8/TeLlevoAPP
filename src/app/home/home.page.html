@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="contenido">
+      <div class="centrar">
+        <h1><br>¡Hola, Bienvenido<br>
+          de nuevo!</h1>
+      </div>
+      <div class="centrar">
+        <h3>¿Qué deseas realizar hoy?</h3>
+      </div>
+      <div class="imgRobot">
+        <img src="assets/chatbot.2.gif" alt="">
+      </div>
+      
+      <div class="mes">
+        <div class="info" [routerLink]="['/drive']">
+          <ion-icon name="car-sport"></ion-icon>
+          <div class="texto">
+            <h2>Conducir</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mes">
+        <div class="info" [routerLink]="['/go']">
+          <ion-icon name="accessibility"></ion-icon>
+          <div class="texto">
+            <h2>Viajar</h2>
+          </div>
+        </div>
+      </div>
+      <div class="mes">
+        <div class="info" [routerLink]="['/setting']">
+          <ion-icon name="settings"></ion-icon>
+          <div class="texto">
+            <h2>Ajustes</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <div class="boton" [routerLink]="['/home']">
+        <ion-icon name="home"></ion-icon>
+        <h3>Inicio</h3>
+      </div>
+      <div class="boton" [routerLink]="['/wallet']">
+        <ion-icon name="wallet"></ion-icon>
+        <h3>Billetera</h3>
+      </div>
+      <div class="boton" [routerLink]="['/map']">
+        <ion-icon name="map"></ion-icon>
+        <h3>Mapa</h3>
+      </div>
+      <div class="boton" [routerLink]="['/profile']">
+        <ion-icon name="person"></ion-icon>
+        <h3>Perfil</h3>
+      </div>
+    </div>
+  </div>
+</ion-content>
